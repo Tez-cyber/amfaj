@@ -1,7 +1,9 @@
+import { useState } from "react"
 import logo from "../assets/Logo.png"
 import { motion } from "framer-motion"
 
 export const Navbar = () => {
+    const [openNav, setOpenNav] = useState(false)
     const navLinks = [
         { name: "Home", link: "#home" },
         { name: "About", link: "#about" },
@@ -9,6 +11,44 @@ export const Navbar = () => {
         { name: "Services", link: "#services" },
         { name: "Contact us", link: "#contact" },
     ]
+
+    const topVariants = {
+        closed: {
+            rotate: 0
+        },
+        opened: {
+            rotate: 45,
+            backgroundColor: "#052e24"
+        }
+    }
+    const centerVariants = {
+        closed: {
+            opacity: 1
+        },
+        opened: {
+            opacity: 0
+        }
+    }
+    const bottomVariants = {
+        closed: {
+            rotate: 0
+        },
+        opened: {
+            rotate: -45,
+            backgroundColor: "#052e24"
+        }
+    }
+    const listVariants = {
+        closed: {
+            y: "100vh"
+        },
+        opened: {
+            y: 0,
+            transition: {
+                duration: .25
+            }
+        }
+    }
     return (
         <div className="sticky top-0">
             <div className="flex items-center justify-between mx-10 py-10 md:mx-28">
@@ -30,12 +70,27 @@ export const Navbar = () => {
                 {/* ============ Mobile Navbar  */}
                 <div className="md:hidden">
                     <button
-                        onClick=""
-                        className='w-10 h-7 flex flex-col justify-between relative z-30'>
-                        <motion.div className="w-10 h-1 bg-white rounded origin-left"></motion.div>
-                        <motion.div className="w-10 h-1 bg-white rounded"></motion.div>
-                        <motion.div className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+                        onClick={() => setOpenNav(!openNav)}
+                        className='w-10 h-8 flex flex-col justify-between relative z-30'>
+                        <motion.div variants={topVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+                        <motion.div variants={centerVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded"></motion.div>
+                        <motion.div variants={bottomVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
                     </button>
+                    {
+                        openNav &&
+                        <motion.div variants={listVariants} initial={"closed"} animate={"opened"} className="absolute top-[30px] right-[30px] rounded-xl left-[30px] mb-10 bg-lime
+                             text-black flex flex-col items-center justify-center gap-10 text-3xl h-screen max-w-full">
+                            {
+                                navLinks.map(link => (
+                                    <div className="" key={link.name}>
+                                        <a href={link.link}>
+                                            {link.name}
+                                        </a>
+                                    </div>
+                                ))
+                            }
+                        </motion.div>
+                    }
                 </div>
             </div>
         </div>
