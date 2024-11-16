@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-darkGreen">
+      <div className="">
         <Navbar />
         <HeroSection />
       </div>

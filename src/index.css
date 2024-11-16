@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+    body {
+        @apply bg-darkGreen
+    }
+}
 @layer utilities {
     .btn {
         @apply px-8 py-5 rounded-[800px] text-[24px] transition duration-300 font-[400]
