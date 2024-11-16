@@ -1,9 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import logo from "../assets/Logo.png"
 import { motion } from "framer-motion"
 
 export const Navbar = () => {
     const [openNav, setOpenNav] = useState(false)
+    const [scrolling, setScrolling] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [])
+
+    const handleScroll = () => {
+        if (window.scrollY > 20) {
+            setScrolling(true);
+          } else {
+            setScrolling(false);
+          }
+    }
     const navLinks = [
         { name: "Home", link: "#home" },
         { name: "About", link: "#about" },
@@ -51,7 +65,7 @@ export const Navbar = () => {
     }
     return (
         <div className="sticky top-0">
-            <div className="flex items-center justify-between mx-10 py-10 md:mx-28">
+            <div className={scrolling ? "flex items-center shadow-md justify-between px-10 py-10 md:mx-28" : "flex items-center justify-between mx-10 py-10 md:mx-28"}>
                 {/* Logo section */}
                 <img src={logo} alt="" />
 
