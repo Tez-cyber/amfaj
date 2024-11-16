@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        darkGreen: "#052e24"
+      }
     }
   },
   plugins: [],
