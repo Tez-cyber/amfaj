@@ -1,7 +1,9 @@
 import left from "../assets/hero-left.jpeg"
+import { ImgHero } from "./imgHero"
 export const HeroSection = () => {
   return (
-    <div className="text-center mt-[150px] px-10 flex flex-col gap-5 items-center justify-center text-white md:h-[521px] md:gap-0 md:mt-0">
+    <div className="text-center mt-[100px] px-10 flex flex-col gap-5 items-center justify-center text-white md:gap-0 md:mt-0">
+        {/* ============== First Section =========== */}
         <h1 className="text-7xl font-bold md:leading-[88.56px] md:text-[72px]">
           Exceptional Agricultural <span className="hidden md:inline"><br /></span>
           Commodities
@@ -14,6 +16,8 @@ export const HeroSection = () => {
           <button className="btn bg-white text-black hover:border-[2px] hover:text-white hover:border-white hover:bg-transparent">Get in touch!</button>
           <button className="btn border-white border-[2px] hover:bg-white hover:text-darkGreen">View products</button>
         </div>
+        {/* ============== Second section ================= */}
+        <ImgHero />
     </div>
   )
 }
