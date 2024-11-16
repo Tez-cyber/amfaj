@@ -1,7 +1,7 @@
 
 export const HeroSection = () => {
   return (
-    <div className="h-[521px] text-center  flex flex-col items-center justify-center text-white">
+    <div className="text-center flex flex-col items-center justify-center text-white h-[521px]">
         <h1 className="text-[72px] font-bold leading-[88.56px]">
           Exceptional Agricultural <br />
           Commodities
