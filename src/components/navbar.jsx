@@ -65,7 +65,7 @@ export const Navbar = () => {
     }
     return (
         <div className="sticky top-0">
-            <div className={scrolling ? "flex items-center shadow-md justify-between px-10 py-10 md:mx-28" : "flex items-center justify-between mx-10 py-10 md:mx-28"}>
+            <div className={scrolling ? "flex items-center bg-darkGreen shadow-md justify-between px-10 py-10 z-20 md:px-28 " : "flex items-center justify-between px-10 py-10 md:px-28"}>
                 {/* Logo section */}
                 <img src={logo} alt="" />
 
