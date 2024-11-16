@@ -5,7 +5,7 @@ import extrance from "../assets/extrance.png"
 
 export const Partners = () => {
   return (
-    <div className="bg-[#d2d2d6] text-[#3A3A3C] px-20 py-10 items-center jcen gap-10 md:flex">
+    <div className="bg-[#d2d2d6] text-[#3A3A3C] px-20 py-10 items-center gap-10 flex flex-col md:flex-row">
         <p className="text-[24px] font-bold">Our partners</p>
         <div className="bg-white px-5 py-2 rounded-md flex items-center justify-center">
             <img src={olam} alt="" />
