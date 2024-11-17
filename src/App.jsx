@@ -1,3 +1,4 @@
+import { ExcellenceSection } from "./components/excellenceSection"
 import { HeroSection } from "./components/heroSection"
 import { Navbar } from "./components/navbar"
 
@@ -8,6 +9,7 @@ function App() {
       <div className="">
         <Navbar />
         <HeroSection />
+        <ExcellenceSection />
       </div>
     </>
   )

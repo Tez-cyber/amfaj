@@ -4,7 +4,7 @@ import { Partners } from "./partners"
 export const HeroSection = () => {
   return (
     <div className="mt-[100px] text-white md:gap-0 md:mt-0">
-      <div className="text-center flex flex-col gap-5 items-center justify-cente px-10 md:px-28">
+      <div className="text-center flex flex-col gap-5 items-center justify-center px-10 md:px-28">
         {/* ============== First Section =========== */}
         <h1 className="text-6xl font-bold md:leading-[88.56px] md:text-[72px]">
           Exceptional Agricultural <span className="hidden md:inline"><br /></span>
