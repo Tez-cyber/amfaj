@@ -2,6 +2,8 @@
 // ============== tabs data
 export const tabsData = [
     {
+        id: 1,
+        img: "/sesame.png",
         nav: "Sesame",
         mainHead: "Sesame Seeds",
         desc: `
