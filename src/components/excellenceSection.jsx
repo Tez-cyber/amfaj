@@ -4,7 +4,7 @@ import energy from "../assets/energy.png"
 
 export const ExcellenceSection = () => {
     const headStyle = "text-[#016623] font-semibold pb-6 md:text-[56px]"
-    const card = "p-10 rounded-2xl "
+    const card = "px-5 py-10 rounded-2xl "
     const cardHead = "capitalize pb-3 md:text-[24px]"
     const cardImg = "py-4"
     return (
@@ -26,30 +26,29 @@ export const ExcellenceSection = () => {
                         <img className={`${cardImg}`} src={check} alt="" />
                         <p className={`${cardHead}`}>integrity</p>
                         <p className="">
-                            Integrity is the bedrock of AM FAJ
-                            Global trading Limited, guiding us to
+                            Integrity is the bedrock of AMFAJ <br />
+                            Global trading Limited, guiding us to <br />
                             uphold honesty and transparency in all
                             our dealings.
                         </p>
                     </div>
                     <div className={`${card} bg-[#733d00]`}>
                         <img className={`${cardImg}`} src={thumbs} alt="" />
-                        <p className={`${cardHead}`}>integrity</p>
+                        <p className={`${cardHead}`}>quality</p>
                         <p className="">
-                            Integrity is the bedrock of AM FAJ
-                            Global trading Limited, guiding us to
-                            uphold honesty and transparency in all
-                            our dealings.
+                            Quality is our hallmark, driving us to
+                            deliver products and services that
+                            consistently exceed expectations.
                         </p>
                     </div>
                     <div className={`${card} bg-[#567800]`}>
                         <img className={`${cardImg}`} src={energy} alt="" />
-                        <p className={`${cardHead}`}>integrity</p>
+                        <p className={`${cardHead}`}>Sustainability</p>
                         <p className="">
-                            Integrity is the bedrock of AM FAJ
-                            Global trading Limited, guiding us to
-                            uphold honesty and transparency in all
-                            our dealings.
+                            Sustainability is our commitment, 
+                            inspiring us to embrace eco-friendly 
+                            practices and support the communities 
+                            we serve.
                         </p>
                     </div>
                 </section>
