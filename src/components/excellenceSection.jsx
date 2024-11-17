@@ -8,7 +8,7 @@ export const ExcellenceSection = () => {
     const cardHead = "capitalize pb-3 text-2xl md:text-[24px]"
     const cardImg = "py-4"
     return (
-        <section className="flex flex-col justify-center items-center m-10 gap-10 bg-white p-5 t4xl rounded-2xl md:mx-28">
+        <section className="flex flex-col justify-center items-center my-20 mx-10 gap-10 bg-white p-5  rounded-2xl md:mx-28">
             <div className="text-center">
                 <h2 className={`${headStyle} font-semibold md:text-[56px]`}>Excellence meets Integrity</h2>
                 <p className="text-[#3A3A3C] md:px-10 md:text-[24px]">
