@@ -1,6 +1,7 @@
 import { ExcellenceSection } from "./components/excellenceSection"
 import { HeroSection } from "./components/heroSection"
 import { Navbar } from "./components/navbar"
+import { ProductSection } from "./components/productSection"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <ExcellenceSection />
+        <ProductSection />
       </div>
     </>
   )
