@@ -92,8 +92,8 @@ export const Navbar = () => {
                     </button>
                     {
                         openNav &&
-                        <motion.div variants={listVariants} initial={"closed"} animate={"opened"} className="absolute top-[30px] right-[30px] rounded-xl left-[30px] mb-10 bg-lime
-                             text-black flex flex-col items-center pt-[200px] gap-16 text-4xl h-screen max-w-full">
+                        <motion.div variants={listVariants} initial={"closed"} animate={"opened"} className="absolute top-[20px] right-[30px] rounded-xl left-[30px] mb-10 bg-lime
+                             text-black flex flex-col items-center gap-5 pt-[100px] text-2xl h-[500px] max-w-full">
                             {
                                 navLinks.map(link => (
                                     <div className="" key={link.name}>
