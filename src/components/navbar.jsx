@@ -85,10 +85,10 @@ export const Navbar = () => {
                 <div className="md:hidden">
                     <button
                         onClick={() => setOpenNav(!openNav)}
-                        className='w-10 h-8 flex flex-col justify-between relative z-30'>
-                        <motion.div variants={topVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
-                        <motion.div variants={centerVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded"></motion.div>
-                        <motion.div variants={bottomVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+                        className='w-10 h-8 flex flex-col justify-between items-end relative z-30'>
+                        <motion.div variants={topVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
+                        <motion.div variants={centerVariants} animate={openNav ? "opened" : "closed"} className="w-7 h-[2px] bg-white rounded"></motion.div>
+                        <motion.div variants={bottomVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
                     </button>
                     {
                         openNav &&
