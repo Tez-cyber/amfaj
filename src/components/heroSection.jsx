@@ -6,11 +6,11 @@ export const HeroSection = () => {
     <div className="mt-[100px] text-white md:gap-0 md:mt-0">
       <div className="text-center flex flex-col gap-5 items-center justify-center px-10 md:px-28">
         {/* ============== First Section =========== */}
-        <h1 className="text-6xl font-bold md:leading-[88.56px] md:text-[72px]">
+        <h1 className="text-5xl font-bold md:leading-[88.56px] md:text-[70px] md:mt-6 ">
           Exceptional Agricultural <span className="hidden md:inline"><br /></span>
           Commodities
         </h1>
-        <p className="text-xl pt-5 md:text-[28px]">
+        <p className="text-lg pt-5 md:text-[28px]">
           We Lead in Agricultural Commodities supply. <span className="hidden md:inline"><br /></span>
           Nature's Best, delivered with Excellence.
         </p>

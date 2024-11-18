@@ -9,6 +9,6 @@
 }
 @layer utilities {
     .btn {
-        @apply px-8 py-5 rounded-[800px] text-[24px] transition duration-300 font-[400]
+        @apply px-5 py-3 rounded-[800px] text-[24px] transition duration-300 font-[400] md:px-8 md:py-5
     }
 }
