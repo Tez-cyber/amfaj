@@ -3,7 +3,7 @@ import { ImgHero } from "./imgHero"
 import { Partners } from "./partners"
 export const HeroSection = () => {
   return (
-    <div className="mt-[100px] text-white md:gap-0 md:mt-0">
+    <div id="home" className="mt-[100px] text-white md:gap-0 md:mt-0">
       <div className="text-center flex flex-col gap-5 items-center justify-center px-10 md:px-28">
         {/* ============== First Section =========== */}
         <h1 className="text-5xl font-bold md:leading-[88.56px] md:text-[70px] md:mt-6 ">
