@@ -67,7 +67,7 @@ export const Navbar = () => {
         <div className="sticky top-0">
             <div className={scrolling ? "flex items-center bg-darkGreen shadow-md justify-between px-10 py-6 z-20 md:px-28 " : "flex items-center justify-between px-10 py-6 z-20 md:px-28"}>
                 {/* Logo section */}
-                <img src={logo} alt="" />
+                <img src={logo} className="size-1/2 md:size-auto" alt="" />
 
                 {/* ======= Links section ================== */}
                 <ul className="hidden gap-10 text-white md:flex">
