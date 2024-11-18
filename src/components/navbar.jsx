@@ -54,18 +54,21 @@ export const Navbar = () => {
     }
     const listVariants = {
         closed: {
-            y: "100vh"
+            x: "100%"
         },
         opened: {
-            y: 0,
+            x: "0",
             transition: {
-                duration: .25
+                duration: .35
             }
         }
     }
+
+    const navWrapper = "flex items-center justify-between py-5 px-10 z-20 md:py-6 md:px-28"
+    const animateNav = openNav ? "opened" : "closed"
     return (
         <div className="sticky top-0">
-            <div className={scrolling ? "flex items-center bg-darkGreen shadow-md justify-between px-10 py-6 z-20 md:px-28 " : "flex items-center justify-between px-10 py-6 z-20 md:px-28"}>
+            <div className={scrolling ? `${navWrapper} bg-darkGreen shadow-md` : `${navWrapper}`}>
                 {/* Logo section */}
                 <img src={logo} className="size-1/2 md:size-auto" alt="" />
 
@@ -86,13 +89,13 @@ export const Navbar = () => {
                     <button
                         onClick={() => setOpenNav(!openNav)}
                         className='w-10 h-8 flex flex-col justify-between items-end relative z-30'>
-                        <motion.div variants={topVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
-                        <motion.div variants={centerVariants} animate={openNav ? "opened" : "closed"} className="w-7 h-[2px] bg-white rounded"></motion.div>
-                        <motion.div variants={bottomVariants} animate={openNav ? "opened" : "closed"} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
+                        <motion.div variants={topVariants} animate={animateNav} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
+                        <motion.div variants={centerVariants} animate={animateNav} className="w-7 h-[2px] bg-white rounded"></motion.div>
+                        <motion.div variants={bottomVariants} animate={animateNav} className="w-10 h-[2px] bg-white rounded origin-left"></motion.div>
                     </button>
                     {
                         openNav &&
-                        <motion.div variants={listVariants} initial={"closed"} animate={"opened"} className="absolute top-[20px] right-[30px] rounded-xl left-[30px] mb-10 bg-lime
+                        <motion.div variants={listVariants} initial={"closed"} animate={"opened"} className="absolute top-[15px] right-[30px] rounded-xl left-[30px] mb-10 bg-lime
                              text-black flex flex-col items-center gap-5 pt-[100px] text-2xl h-[500px] max-w-full">
                             {
                                 navLinks.map(link => (
