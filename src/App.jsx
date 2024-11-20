@@ -1,3 +1,4 @@
+import { ContactSection } from "./components/contactSection"
 import { ExcellenceSection } from "./components/excellenceSection"
 import { HeroSection } from "./components/heroSection"
 import { Navbar } from "./components/navbar"
@@ -14,6 +15,7 @@ function App() {
         <ExcellenceSection />
         <ProductSection />
         <ServiceSection />
+        <ContactSection />
       </div>
     </>
   )
