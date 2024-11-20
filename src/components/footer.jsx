@@ -24,7 +24,6 @@ export const Footer = () => {
                     </div>
                 </section>
                 <section className="flex flex-col gap-4 mt-20 md:mt-0 md:w-[60%]">
-                    <section className="flex justify-evenly md:gap-4 md:flex-col">
                         {/* ======== Phone ====== */}
                         <section className={`${styles.contactWrap}`}>
                             <img src="/icons/call.png" alt="" />
@@ -41,11 +40,10 @@ export const Footer = () => {
                                 <p>fajade1973@gmail.com</p>
                             </div>
                         </section>
-                    </section>
                     {/* ========= Locations */}
                     <section className={`${styles.contactWrap} items-baseline`}>
                         <img src="/icons/place.png" alt="" />
-                        <section className="text-white mt-6 grid gap-10 grid-cols-2 md:grid-cols-3">
+                        <section className="text-white mt-6 grid gap-2 grid-cols-1 md:gap-10 md:grid-cols-3">
                             <div className="">
                                 <p className={`${styles.footerHead}`}>Lagos</p>
                                 <p className="">
