@@ -22,7 +22,7 @@ export const ServiceSection = () => {
                         <section key={card.id} className="bg-white rounded-xl p-4">
                             <img src={card.img} alt="" />
                             <main className="pt-5">
-                                <h2 className="text-[#013010] text-lg md:text-[20px]">{card.title}</h2>
+                                <h2 className="text-mainGreen text-lg md:text-[20px]">{card.title}</h2>
                                 <p className="pt-2 text-[13px] md:text-base">{card.content}</p>
                             </main> 
                         </section>
