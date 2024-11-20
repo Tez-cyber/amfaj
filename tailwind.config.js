@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         darkGreen: "#052e24",
-        lime: "#e8ffad"
+        lime: "#e8ffad",
+        textGray: "#3a3a3c",
+        mainGreen: "#013010"
       }
     }
   },

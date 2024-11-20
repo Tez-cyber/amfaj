@@ -4,7 +4,14 @@ export const styles = {
     excard: "px-5 py-10 rounded-2xl",
     excardHead: "capitalize pb-3 text-2xl md:text-[24px]",
     excardImg: "py-4",
-    excardContent: "text-sm md:text-base"
+    excardContent: "text-sm md:text-base",
+
+    // ================ Contact Section
+    label: "font-bold text-left block pb-2 text-textGray",
+    input: `w-full pl-5 pr-3 py-2 rounded-lg
+            border border-gray-700 focus:border-darkGreen
+            transition duration-200 placeholder:text-sm md:w-[90%] 
+            `,
 }
 
 // ============== tabs data
