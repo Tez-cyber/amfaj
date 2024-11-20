@@ -124,3 +124,45 @@ export const tabsData = [
         ]
     }
 ]
+
+// ===================== service section 
+export const serviceCards = [
+    {
+        id: 1,
+        img: "/services/serv-1.png",
+        title: "Sourcing and Procurement",
+        content: `
+            Integrity is the bedrock of AM FAJ Global trading Limited, 
+            guiding us to uphold honesty and transparency in all our dealings.
+        `,
+    },
+    {
+        id: 2,
+        img: "/services/serv-2.png",
+        title: "Seeds Cleaning and Destoning Services",
+        content: `
+            Our advanced facilities and skilled technicians ensure meticulous cleaning 
+            and removal of impurities, meeting your exact specifications.
+        `,
+    },
+    {
+        id: 3,
+        img: "/services/serv-3.png",
+        title: "Cashew nut processing and packaging",
+        content: `
+           Experience top-notch cashew nut processing and packaging services tailored to your requirements. 
+           Our skilled professionals ensure precision processing and packaging to preserve the quality and 
+           freshness of the cashew nuts.
+        `,
+    },
+    {
+        id: 4,
+        img: "/services/serv-4.png",
+        title: "Logistics and Warehousing",
+        content: `
+            Take advantage of our efficient logistics and warehousing solutions. We manage the 
+            transportation and storage of commodities with precision and care to ensure timely 
+            delivery and optimal storage conditions.
+        `,
+    },
+]
