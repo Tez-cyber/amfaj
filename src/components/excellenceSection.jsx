@@ -1,19 +1,13 @@
 import check from "../assets/checkmark.png"
 import thumbs from "../assets/thumbs.png"
 import energy from "../assets/energy.png"
+import { styles } from "../utils"
 
 export const ExcellenceSection = () => {
-    const styles = {
-        headStyle: "text-[#016623] pb-6 text-[30px]",
-        card: "px-5 py-10 rounded-2xl",
-        cardHead: "capitalize pb-3 text-2xl md:text-[24px]",
-        cardImg: "py-4",
-        cardContent: "text-sm md:text-base"
-    } 
     return (
         <section className="flex flex-col justify-center items-center my-20 mx-10 gap-10 bg-white p-5  rounded-2xl md:mx-28">
             <div className="text-center">
-                <h2 className={`${styles.headStyle} font-semibold md:text-[56px]`}>Excellence meets Integrity</h2>
+                <h2 className={`${styles.exheadStyle} font-semibold md:text-[56px]`}>Excellence meets Integrity</h2>
                 <p className="text-[#3A3A3C] md:px-10 text-[15px] md:text-[24px]">
                     Established with a dedication to excellence and integrity, AM FAJ Global is committed to
                     delivering top-quality products and unparalleled service to our valued customers across
@@ -23,30 +17,30 @@ export const ExcellenceSection = () => {
             </div>
             {/* ============ Card section ============= */}
             <section className="">
-                <h2 className={`${styles.headStyle} text-center font-bold md:font-bold md:text-[40px]`}>Our core values</h2>
+                <h2 className={`${styles.exheadStyle} text-center font-bold md:font-bold md:text-[40px]`}>Our core values</h2>
                 <section className="text-white grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3">
-                    <div className={`${styles.card} bg-[#005c1d]`}>
-                        <img className={`${styles.cardImg}`} src={check} alt="" />
-                        <p className={`${styles.cardHead}`}>integrity</p>
-                        <p className={`${styles.cardContent}`}>
+                    <div className={`${styles.excard} bg-[#005c1d]`}>
+                        <img className={`${styles.excardImg}`} src={check} alt="" />
+                        <p className={`${styles.excardHead}`}>integrity</p>
+                        <p className={`${styles.excardContent}`}>
                             Integrity is the bedrock of AMFAJ <br className="hidden md:block" />
                             Global trading Limited, guiding us to <br className="hidden md:block" />
                             uphold honesty and transparency in all
                             our dealings.
                         </p>
                     </div>
-                    <div className={`${styles.card} bg-[#733d00]`}>
-                        <img className={`${styles.cardImg}`} src={thumbs} alt="" />
-                        <p className={`${styles.cardHead}`}>quality</p>
+                    <div className={`${styles.excard} bg-[#733d00]`}>
+                        <img className={`${styles.excardImg}`} src={thumbs} alt="" />
+                        <p className={`${styles.excardHead}`}>quality</p>
                         <p className="">
                             Quality is our hallmark, driving us to
                             deliver products and services that
                             consistently exceed expectations.
                         </p>
                     </div>
-                    <div className={`${styles.card} bg-[#567800]`}>
-                        <img className={`${styles.cardImg}`} src={energy} alt="" />
-                        <p className={`${styles.cardHead}`}>Sustainability</p>
+                    <div className={`${styles.excard} bg-[#567800]`}>
+                        <img className={`${styles.excardImg}`} src={energy} alt="" />
+                        <p className={`${styles.excardHead}`}>Sustainability</p>
                         <p className="">
                             Sustainability is our commitment, 
                             inspiring us to embrace eco-friendly 

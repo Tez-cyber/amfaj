@@ -1,3 +1,11 @@
+export const styles = {
+    // ============ Excellence section
+    exheadStyle: "text-[#016623] pb-6 text-[30px]",
+    excard: "px-5 py-10 rounded-2xl",
+    excardHead: "capitalize pb-3 text-2xl md:text-[24px]",
+    excardImg: "py-4",
+    excardContent: "text-sm md:text-base"
+}
 
 // ============== tabs data
 export const tabNav = [
