@@ -12,7 +12,19 @@ export const styles = {
             border border-gray-700 focus:border-darkGreen
             transition duration-200 placeholder:text-sm md:w-[90%] 
             `,
+
+    // ================ Footer
+    footerHead: "font-semibold text-[#016622] capitalize md:text-[20px]"
 }
+
+// ============= Navigation Links
+export const navLinks = [
+    { name: "Home", link: "#home" },
+    { name: "About", link: "#about" },
+    { name: "Products", link: "#products" },
+    { name: "Services", link: "#services" },
+    { name: "Contact us", link: "#contact" },
+]
 
 // ============== tabs data
 export const tabNav = [
