@@ -14,7 +14,8 @@ export const styles = {
             `,
 
     // ================ Footer
-    footerHead: "font-semibold text-[#016622] capitalize md:text-[20px]"
+    footerHead: "font-semibold text-[#016622] capitalize text-[24px]",
+    contactWrap: "flex items-center gap-4",
 }
 
 // ============= Navigation Links
