@@ -1,5 +1,6 @@
 import logo from "../assets/Logo.png"
 import { styles, navLinks } from "../utils"
+import { Facebook, Instagram, InstagramIcon, Twitter, Youtube } from 'lucide-react';
 
 export const Footer = () => {
     return (
@@ -24,22 +25,22 @@ export const Footer = () => {
                     </div>
                 </section>
                 <section className="flex flex-col gap-4 mt-20 md:mt-0 md:w-[60%]">
-                        {/* ======== Phone ====== */}
-                        <section className={`${styles.contactWrap}`}>
-                            <img src="/icons/call.png" alt="" />
-                            <div className="text-white text-[17px]">
-                                <p>+234(0) 8055606558</p>
-                                <p>+234(0) 8069243134</p>
-                            </div>
-                        </section>
-                        {/*  ======= Emails */}
-                        <section className={`${styles.contactWrap}`}>
-                            <img src="/icons/email.png" alt="" />
-                            <div className="text-white text-[17px]">
-                                <p>fajagroproduct@gmail.com</p>
-                                <p>fajade1973@gmail.com</p>
-                            </div>
-                        </section>
+                    {/* ======== Phone ====== */}
+                    <section className={`${styles.contactWrap}`}>
+                        <img src="/icons/call.png" alt="" />
+                        <div className="text-white text-[17px]">
+                            <p>+234(0) 8055606558</p>
+                            <p>+234(0) 8069243134</p>
+                        </div>
+                    </section>
+                    {/*  ======= Emails */}
+                    <section className={`${styles.contactWrap}`}>
+                        <img src="/icons/email.png" alt="" />
+                        <div className="text-white text-[17px]">
+                            <p>fajagroproduct@gmail.com</p>
+                            <p>fajade1973@gmail.com</p>
+                        </div>
+                    </section>
                     {/* ========= Locations */}
                     <section className={`${styles.contactWrap} items-baseline`}>
                         <img src="/icons/place.png" alt="" />
@@ -74,8 +75,23 @@ export const Footer = () => {
                 </section>
             </section>
             {/*  ======= Horizontal line ======== */}
-
+            <span className="bg-white w-full h-[2px] block my-6"></span>
             {/*  ============= socials ========== */}
+            <section className="text-white flex justify-center md:mr-28 md:justify-end ">
+                <section className="flex items-center gap-3 md:gap-0 md:items-start md:flex-col">
+                    <p className="capitalize ml-3">connect with us</p>
+                    <div className="flex gap-3"> 
+                        <a href="">
+                            <Facebook className={`${styles.socials}`} fill="white" size={40} color="#000" />
+                        </a>
+                        <a href="" className="">
+                            <Twitter className={`${styles.socials}`} fill="white" size={40} color="#000" />
+                        </a>
+                        <a href="" className=""><Youtube className={`${styles.socials}`} fill="white" size={40} color="#000" /></a>
+                        <a href="" className=""><InstagramIcon className={`${styles.socials}`} fill="white" size={40} color="#000" /></a>
+                    </div>
+                </section>
+            </section>
         </section>
     )
 }

@@ -16,6 +16,7 @@ export const styles = {
     // ================ Footer
     footerHead: "font-semibold text-[#016622] capitalize text-[24px]",
     contactWrap: "flex items-center gap-4",
+    socials: "transition duration-300 rounded-lg px-2 hover:bg-lime"
 }
 
 // ============= Navigation Links
